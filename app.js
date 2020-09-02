@@ -16,8 +16,7 @@ app.get('/auth', (req, res) => {
 app.get('/', (req, res) => {
 	// redirect to get request for oauth login
 	res.redirect(
-		`https://id.twitch.tv/oauth2/authorize?client_id=${process.env.CLIENT_ID}&redirect_uri=${process.env
-			.REDIRECT_URI}&response_type=token&scope=chat:read chat:edit user_follows_edit&force_verify=true`
+		`https://id.twitch.tv/oauth2/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=token&scope=chat:read chat:edit user_follows_edit&force_verify=true`
 	);
 });
 
