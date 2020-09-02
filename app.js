@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 // oauth information
-const CLIENT_ID = '82iur9gob27hu9w79f62jrxf39cjw4';
+const CLIENT_ID = '';
 const REDIRECT_URI = 'http://localhost:3000/auth';
 
 // auth route
